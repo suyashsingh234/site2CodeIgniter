@@ -3,3 +3,23 @@ html,body{
 	width: 100%;
 	overflow: hidden;
 }
+table{
+	position: relative;
+	top: 10%;
+	width:90%;
+	height: 50%;
+	font-size: 2em;
+}
+
+table tr{
+}
+
+#addProjectForm{
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	display: none;
+	z-index: 2;
+	margin: auto;
+	background-color: white;
+}

@@ -2,21 +2,19 @@ var loginBtn=document.getElementById('loginBtn');
 var signupBtn=document.getElementById('signupBtn');
 var loginForm=document.getElementById('loginForm');
 var signupForm=document.getElementById('signupForm');
+var white="#ffffff";
+var silver="#C0C0C0";
 
 loginBtn.addEventListener('click',function(){
-	loginBtn.style.backgroundColor="#00FF00";
+	loginBtn.style.backgroundColor=white;
 	loginForm.style.display="block";
-	loginBtn.style.color="white";
-	signupBtn.style.backgroundColor="white";
+	signupBtn.style.backgroundColor=silver;
 	signupForm.style.display="none";
-	signupBtn.style.color="black";
 });
 
 signupBtn.addEventListener('click',function(){
-	signupBtn.style.backgroundColor="#00FF00";
+	signupBtn.style.backgroundColor=white;
 	signupForm.style.display="block";
-	signupBtn.style.color="white";
-	loginBtn.style.backgroundColor="white";
+	loginBtn.style.backgroundColor=silver;
 	loginForm.style.display="none";
-	loginBtn.style.color="black";
 });

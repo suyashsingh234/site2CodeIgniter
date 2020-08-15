@@ -30,48 +30,32 @@
 			<div id="bottomRow">
 				<?php echo validation_errors(); ?>
 				<div id="loginForm">
-					<pre>
 					<?php
 					echo form_open(base_url().'registration/login');
-					echo form_label('Username:','username');
+					echo form_input(array('name'=>'username', 'placeholder'=>'username'));
 					echo "<br>";
-					echo form_input('username');
-					echo "<br>";
-					echo form_label('Password:','password');
-					echo "<br>";
-					echo form_password('password');
+					echo form_password(array('name'=>'password','placeholder'=>'password'));
 					echo "<br>";
 					echo form_submit('submit','submit');
 					echo form_close();
 					$forgotPassUrl=base_url().'forgotPassword';
 					echo "<a href={$forgotPassUrl}>Forgot password?</a>";
 					?>
-					</pre>
 				</div>
 				<div id="signupForm">
-					<pre>
 					<?php
 					echo form_open(base_url().'registration/signup');
-					echo form_label('Email:','email');
+					echo form_input(array('name'=>'email','placeholder'=>'email'));
 					echo "<br>";
-					echo form_input('email');
+					echo form_input(array('name'=>'username','placeholder'=>'username'));
 					echo "<br>";
-					echo form_label('Username:','username');
+					echo form_password(array('name'=>'password','placeholder'=>'password'));
 					echo "<br>";
-					echo form_input('username');
-					echo "<br>";
-					echo form_label('Password:','password');
-					echo "<br>";
-					echo form_password('password');
-					echo "<br>";
-					echo form_label('Confirm password:','confirmPassword');
-					echo "<br>";
-					echo form_password('confirmPassword');
+					echo form_password(array('name'=>'confirmPassword','placeholder'=>'confirm password'));
 					echo "<br>";
 					echo form_submit('submit','submit');
 					echo form_close();
 					?>
-				</pre>
 			</div>
 		</div>
 

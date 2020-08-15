@@ -9,7 +9,7 @@
 			}
 			else if(isset($_SESSION['username'])){
 				if($_SESSION['username']=='admin')
-					header("Location:".base_url()."userPage/admin");
+					header("Location:".base_url()."admin");
 				else{
 					header("Location:".base_url()."userPage/user");
 				}

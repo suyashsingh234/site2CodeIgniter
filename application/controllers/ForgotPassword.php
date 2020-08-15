@@ -7,7 +7,7 @@
 			$email=$this->input->post('email');
 			$password=$this->input->post('password');
 			$this->form_validation->set_rules('email','Email','trim|required|valid_email');
-			$this->form_validation->set_rules('username', 'Username', 'trim|required|min_length[5]|max_length[12]');
+			$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[8]');
 			if($this->form_validation->run()==false){
 				$this->load->view('registration');
 			}
