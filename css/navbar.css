@@ -1,0 +1,21 @@
+#navContainer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 10%;
+	width: 100%;
+	background-color: #00FF00;
+}
+
+#left{
+	font-size: 2em;
+	float: left;
+}
+
+#right{
+	float: right;
+}
+
+#logout{
+	font-size: 2em;
+}
